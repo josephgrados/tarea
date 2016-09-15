@@ -1,0 +1,24 @@
+Diseñe un programa que exprese la capacidad de un disco duro en megabytes, kilobytes y bytes, conociendo la capacidad del disco en Gigabytes.
+
+
+
+
+
+
+#include<stdio.h>
+main(){
+	float mb,kb,bt,gb;
+	printf("Ingrese la capacidad del disco en Gigabytes: ");
+	scanf("%f",&gb);
+	mb=gb*1000;
+	kb=gb*1000000;
+	bt=gb*(1024*3);
+	
+	printf("\nLa capacidad del disco en megabytes:%.0f",mb);
+	printf("\nLa capacidad del disco en kilobytes:%.0f",kb);
+	printf("\nLa capacidad del disco en bytes:%.0f",bt);
+	
+	return 0;
+	
+	
+}
